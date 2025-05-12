@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>custom_right_click_menu</title>
+  <link rel="stylesheet" href="./output.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body class="m-0 p-0 box-border bg-gradient-to-r from-orange-400 to-rose-500 min-h-screen">
+
+
+  <div id="container" class="hidden w-[300px] bg-white rounded-[10px] py-[15px] px-[10px] shadow-custom absolute z-50">
+    <ul class="list-none py-0 px-[10px]">
+      <li class="py-[5px] px-[10px] cursor-pointer hover:bg-[#f2f2f2]">
+        <i class='bx bxs-show pr-[10px]'></i><span>Preview</span>
+      </li>
+
+      <li class="relative flex items-center justify-between py-[5px] px-[10px] cursor-pointer hover:bg-[#f2f2f2] group">
+        <div>
+          <i class='bx bxs-share pr-[10px]'></i><span>Share</span>
+        </div>
+        <i class='bx bx-chevron-right pr-[10px]'></i>
+
+    
+        <ul id="menu" class="absolute top-0 left-[260px] w-[170px] bg-white rounded-[10px] py-[10px] px-[5px] invisible opacity-0 group-hover:visible group-hover:opacity-100 transition shadow-custom">
+          <li class="hover:bg-[#f2f2f2] px-2 py-1 rounded"><i class='bx bxl-instagram'></i><span>Instagram</span></li>
+          <li class="hover:bg-[#f2f2f2] px-2 py-1 rounded"><i class='bx bxl-linkedin'></i><span>Linkedin</span></li>
+          <li class="hover:bg-[#f2f2f2] px-2 py-1 rounded"><i class='bx bxl-youtube'></i><span>Youtube</span></li>
+        </ul>
+      </li>
+
+      <li class="py-[5px] px-[10px] cursor-pointer hover:bg-[#f2f2f2]">
+        <i class='bx bx-copy pr-[10px]'></i><span>Copy Link</span>
+      </li>
+      <li class="py-[5px] px-[10px] cursor-pointer hover:bg-[#f2f2f2]">
+        <i class='bx bx-edit pr-[10px]'></i><span>Edit</span>
+      </li>
+      <li class="py-[5px] px-[10px] cursor-pointer hover:bg-[#f2f2f2]">
+        <i class='bx bxs-trash-alt pr-[10px]'></i><span>Delete</span>
+      </li>
+
+      <div class="border-t-2 border-[#ccc] my-[10px] pt-[10px]">
+        <li class="py-[5px] px-[10px] cursor-pointer hover:bg-[#f2f2f2]">
+          <i class='bx bx-cog pr-[10px]'></i><span>Settings</span>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+  <script src="./app1.js"></script>
+</body>
+</html>
